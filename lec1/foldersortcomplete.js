@@ -13,7 +13,7 @@ function checkFolder(extension){
         if(extensions[key].includes(extension)){
 
             extFolderPath = `${folderPath}/${key}`;
-            fs.mkdirSync(extFolderPath);
+            
             break;
 
         }
@@ -54,8 +54,9 @@ function sortFolder(folderPath){
         let extensionFolderExist = checkFolder(extensionName);
         if(extensionFolderExist){
             moveFile(content[i]);
+        
 
-        }else {
+        } else {
             createFolder();
             moveFile(content[i]);
 
