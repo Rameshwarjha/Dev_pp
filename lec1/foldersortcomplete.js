@@ -28,7 +28,7 @@ function moveFile(fileName) {
     let sourceFilePath = `${folderPath}/${fileName}`;
     let destinationFilePath = `${extFolderPath}/${fileName}`;
 
-    fs.copyFileSync(sourceFilePath,destinationFilePath);
+    fs.copyFileSync(sourceFilePath , destinationFilePath);
 
     //delete path 
 
@@ -62,3 +62,4 @@ function sortFolder(folderPath){
         }
     }
 }
+sortFolder(folderPath);
