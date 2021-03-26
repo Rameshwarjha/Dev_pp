@@ -30,7 +30,7 @@ browseropenpromise.then(function(browser){
 
 })
 .then(function(){
-    let idtypepromise = tab.type("#input-1" , id);
+    let idtypepromise = tab.type("#input-1" , id); 
     return idtypepromise;
 
 })
