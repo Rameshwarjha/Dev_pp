@@ -17,6 +17,7 @@ browseropenpromise.then(function(browser){
     console.log("browser opened");
    // console.log(browser);
 
+   
 
     let allpagespromise = browser.pages();
     return allpagespromise; 
